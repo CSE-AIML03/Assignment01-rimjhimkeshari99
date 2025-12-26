@@ -53,6 +53,39 @@ header{
 .search button:hover{
     background:#f3a847;
 }
+*/* ===== SLIDER ===== */
+.slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    background:white;
+}
+
+.slides{
+    display:flex;
+    width:400%;
+    animation: slide 16s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:320px;
+    object-fit:auto;
+}
+
+/* Animation */
+@keyframes slide{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+    100%{margin-left:0;}
+}
+*
 
 /* ===== MENU ===== */
 nav{
@@ -135,7 +168,6 @@ footer{
 </head>
 
 <body>
-
 <header>
     <div class="logo">amazon</div>
 
@@ -155,6 +187,15 @@ footer{
     <a href="#">Home</a>
     <a href="#">Books</a>
 </nav>
+<!-- ===== SLIDER ===== -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg">
+        <img src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg">
+    </div>
+</div>
 
 <div class="products">
 
@@ -237,11 +278,24 @@ footer{
         <p class="price">₹699</p>
         <button>Add to Cart</button>
     </div>
-
+ <!-- ITEM 11 -->
+    <div class="card">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/15/aplusautomation/vendorimages/c38d40f3-8caa-4498-ade8-ece8b98c023c.jpg._CB311316684_.jpg">
+        <h3>Badminton Set</h3>
+        <p class="price">₹200</p>
+        <button>Add to Cart</button>
+    </div>
+    <!-- ITEM 12 -->
+    <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ADAlpha_1.4.png?v=1684154340">
+        <h3>Boat Earbuds</h3>
+        <p class="price">₹1000</p>
+        <button>Add to Cart</button>
+    </div>
 </div>
 
 <footer>
-© 2025 Amazon Clone — Educational Project
+&copy 2025 Amazon Clone — Educational Project
 </footer>
 
 </body>
